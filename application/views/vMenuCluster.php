@@ -84,7 +84,7 @@ echo form_fieldset('Proses Clustering',$data);
                         //'style'     => "visibility:"
                         );
                     echo form_checkbox($data);
-                    echo 'Hilangkan Include';
+                    echo 'Hilangkan Include (C/C++)';
                     ?>
                 </td> 
             </tr>            
