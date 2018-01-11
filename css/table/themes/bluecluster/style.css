@@ -1,0 +1,106 @@
+/* tables */
+table.tablesorter3 {
+	font-family:arial;
+	background-color: #ccc;
+	padding:0px;
+	margin-bottom:0px;
+	font-size: 10pt;
+	width: 100%;
+	text-align: left;
+}
+
+table.tablesorter3 thead tr th, table.tablesorter tfoot tr th {
+	background-color: #333;
+	color : #fff;
+	padding: 6px;
+}
+
+table.tablesorter3 thead tr .header {
+	background-repeat: no-repeat;
+	background-position: center right;
+	height:40px;
+	cursor: pointer;
+}
+
+table.tablesorter3 tbody td {
+	text-align:center;
+	color: #3D3D3D;
+	padding: 5px;
+	vertical-align: center;
+}
+
+/*table sorter 2 */
+
+table.tablesorter2 {
+	font-family:arial;
+	background-color: #ccc;
+	font-size: 10pt;
+	width: 100%;
+	text-align: left;
+}
+
+table.tablesorter2 thead tr th, table.tablesorter tfoot tr th {
+	background-color: #333;
+	color:#FFF;
+	padding:4px;
+	padding-top: 14px;
+	padding-bottom: 14px;	
+}
+table.tablesorter2 thead tr .header {
+	cursor: pointer;
+	padding-right:20px;
+}
+table.tablesorter2 tbody td {
+	color: #3D3D3D;
+	padding: 0.8px;
+	background-color: #EFEFEF;
+	vertical-align: top;
+}
+/*
+.headcluster{
+	background-image:url(bg2.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+}
+*/
+
+/* table sorter 3 */
+
+table.tablesorter {
+	font-family:arial;
+	background-color: #ccc;
+	padding:0px;
+	margin-bottom:0px;
+	font-size: 10pt;
+	width: 100%;
+	text-align: left;
+}
+
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	background-color: #333;
+	color : #fff;
+	padding: 6px;
+}
+
+table.tablesorter thead tr .header {
+	background-repeat: no-repeat;
+	background-position: center right;
+	height:25px;
+	cursor: pointer;
+}
+
+table.tablesorter tbody td {
+	text-align:center;
+	color: #3D3D3D;
+	padding: 5px;
+	vertical-align: top;
+}
+
+table.tablesorter tbody tr.odd td {
+	background-color:#F0F0F6;
+}
+
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color: #8dbdd8;
+color:#000;
+}

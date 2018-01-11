@@ -1,0 +1,24 @@
+
+#tabs2 {
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height:38px;
+}
+
+#tabs2 li {
+  font: bold 12px/32px Arial, sans-serif;
+  background:#fafafa;
+  color:#000;
+  float: left;
+  margin: 0;
+  text-align:center;
+  display:inline;
+  border-right:2px solid #ddd; 
+  padding:7px; 
+  min-width:15%;
+  cursor:pointer;
+}
+

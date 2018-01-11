@@ -1,0 +1,270 @@
+@charset "utf-8";
+/* CSS Document */
+
+body
+{
+	max-width: 100%;
+	min-width: 1280px;
+	margin:0;
+	padding:0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#333333;
+	clear:both;
+	background:#1d1d1d;
+	/*background:#090a0a;*/
+}
+
+#main_paling_atas
+{
+	width: 100%;
+	min-width: 1280px;
+	background:#333;
+	float:left;
+	border-bottom:0px solid #208fd5;
+}
+
+#main_paling_atas_content
+{
+	width: 100%;
+	min-width: 1280px;
+	height:35px;
+	margin:0px auto 0px auto;	
+	border:0px solid #FF0000;
+	position:relative;
+	text-decoration : none;
+}
+
+#logout
+{
+	width:50px;
+	float:right;
+	font-size:12px;
+	margin-top: -18px;
+	padding-right:20px;
+	padding-bottom:0px;
+	text-decoration:none;
+}
+
+#logout a
+{
+	font-family:'Arial Black', Gadget, sans-serif;
+	color:#fefefe;
+	text-decoration:none;
+}
+
+#logout a:hover
+{
+	color:#999;
+}
+
+#main_atas
+{
+	width: 100%;
+	min-width: 1280px;
+	background:#ccc;
+	float:left;
+	max-height:140px;
+}
+
+#main_atas_content
+{
+	width: 100%;
+	min-width: 1280pxpx;
+	max-height:100%;
+	margin:0px auto 0px auto;
+	border:0px solid #FF0000;
+	background:#ddd;
+}
+
+#main_atas_content_menu
+{
+	max-width: 100%;
+	min-width: 1280pxpx;
+	max-height : 180px;
+	min-height: 90px;
+	margin:0px auto;
+	padding-left:2%;
+	padding-top:25px;
+	padding-bottom:10px;
+	border:0px solid #333333;
+	background-image:url(images/back.png);
+	background-size:cover;	
+}
+
+#main_atas_content_menu_result
+{
+	max-width: 100%;
+	min-width: 900px;
+	max-height : 90px;
+	min-height: 60px;
+	padding-left:50px;
+	padding-top:25px;
+	padding-bottom:10px;
+	border:0px solid #333333;
+	background-image:url(images/back.png);
+	background-size:cover;	
+}
+
+#main_tengah2
+{	
+	width: 100%;
+	min-width: 1280px;
+	min-height:400px;
+	padding-bottom:45px;
+	background:#fefefe;
+	float:left;
+}
+
+#main_tengah2_result
+{
+	width: 100%;
+	min-width: 1280px;
+	min-height:400px;
+	background:#fefefe;
+	float:left;
+}
+
+#main_tengah_content
+{
+	min-width:1200px;
+	max-width:97%;
+	padding-left: 1%;
+	height:400px;
+	padding-top:10px;
+	margin:0px auto 0px auto;
+	border:0px solid #FF0000;
+	background:#fefefe;
+	margin-bottom:0px;
+}
+
+#main_tengah_content_result
+{
+	width:100%;
+	min-width:1200px;
+	padding-top:20px;
+	padding-left:5px;
+	min-height:400px;
+	margin:0px auto 0px auto;
+	border:0px solid #FF0000;
+	background:#fefefe;
+}
+
+#tengah_kiri
+{
+	width:13%;
+	float: left;
+	margin-left:2px;
+	margin-right:1%;
+    position:relative;
+	min-height:380px;
+	background-color:#fff;
+	border-bottom:2px solid #999;
+}
+
+#tengah_tengah
+{
+	width:45%;
+	float: left;
+	margin-right:1%;
+    position:relative;
+	min-height:386.5px;
+	border-bottom:2px solid #999;
+	background-color:#fff;
+}
+
+#tengah_kanan
+{
+	width:38%;
+	float: left;
+	margin-right:0px;
+	position:relative;
+	border:2px solid #a1a1a1;
+	padding:0px 0px; 
+	border-radius:5px;
+	margin-bottom:10px;
+}
+
+.kode_program
+{
+	min-height:60%;
+	color:#000;
+}
+
+#banding_kode
+{
+	width:97%;
+	min-width:1200px;
+	min-height:620px;
+	height:450px;
+	float:left;
+	padding-top:0px;
+	margin:0px auto 0px auto;
+	background:#fefefe;	
+}
+
+#bankod1{
+	width:49%;
+	min-width:580px;
+	height:98%;
+	float: left;
+	margin-left:2px;
+	margin-right:1%;
+    position:relative;
+	min-height:386.5px;
+	border:2px solid #333;
+	background-color:#333;
+	border-radius:10px;
+}
+
+#bankod2{
+	width:49%;
+	min-width:580px;
+	height:98%;
+	float: left;
+    position:relative;
+	min-height:386.5px;
+	border:2px solid #333;
+	background-color:#333;
+	border-radius:10px;
+}
+
+#main_tengah_content_error
+{
+	width:75%;
+	vertical-align:central;
+	padding-top:20px;
+	min-height:520px;
+	margin-left:20px;
+	float : left;
+	border:0px solid #FF0000;
+	background:#fefefe;
+	margin-bottom:50px;
+}
+
+#footer
+{
+	width:100%;	
+	min-height:50px;
+	clear:both;
+	background:#1d1d1d;
+	float:left;
+	position:relative;
+}
+
+
+
+#main_footer_content
+{
+	width:100%;
+	margin:15px auto 0px auto;
+	max-height:50px;
+	padding-bottom:15px;
+	border:0px solid #FF0000;
+	position:relative;
+	font-size:11px;
+	alignment-adjust:central;
+	color:#FFF;
+	text-align:center;
+}
+
