@@ -1,10 +1,21 @@
-<div id="main_paling_atas">
-    <div id="user_system" style="margin-right:85px; float: right; color:#fff; font-size:14px; font-weight:bold; margin-bottom:-30px; margin-top:10px"><?php echo $user_system ?> &nbsp;&nbsp;<font color="#FFFFFF">|</font>
+<div class="user">
+    <div class="photo">
+        <img src="../kit/img/faces/avatar.jpg" />
     </div>
-	<div id="main_paling_atas_content">
-        <div id="logout">
-        	&nbsp;
-			<h4><?php echo anchor('/clogin/logout/', 'Logout'); ?> </h4>   	   
+    <div class="info">
+        <a data-toggle="collapse" href="#userMenu" class="collapsed">
+            <span>
+                <?php echo $user_system ?>
+                <b class="caret"></b>
+            </span>
+        </a>
+        <div class="clearfix"></div>
+        <div class="collapse" id="userMenu">
+            <ul class="nav">
+                <li>
+                <?php echo  anchor('/clogin/logout','<i class="material-icons">power_settings_new</i><p>Logout</p>');?>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
