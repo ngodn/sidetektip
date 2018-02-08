@@ -19,159 +19,449 @@ class Mmapping extends CI_Model {
                 case 'void':
                     break;
                 
-                //region 1
+
                 case '+':
-                    $arrayMap[]='a';
+                    $arrayMap[]='AA';
                     break;
                 case '-':
-                    $arrayMap[]='b';
+                    $arrayMap[]='AB';
                     break;
                 case '*':
-                    $arrayMap[]='c';
+                    $arrayMap[]='AC';
                     break;
                 case '/':
-                    $arrayMap[]='d';
+                    $arrayMap[]='AD';
                     break;
                 case '%':
-                    $arrayMap[]='e';
+                    $arrayMap[]='AE';
                     break;
-                
-                //region 2
                 case '&':
-                    $arrayMap[]='f';
+                    $arrayMap[]='AF';
                     break;
                 case '|':
-                    $arrayMap[]='g';
+                    $arrayMap[]='AG';
                     break;
-                
-                //region 3
                 case '(':
-                    $arrayMap[]='h';
+                    $arrayMap[]='AH';
                     break;
                 case ')':
-                    $arrayMap[]='i';
+                    $arrayMap[]='AI';
+                    break;
+                case ',':
+                    $arrayMap[]='AJ';
                     break;
                 case '{':
-                    $arrayMap[]='k';
+                    $arrayMap[]='AK';
                     break;
                 case '}':
-                    $arrayMap[]='l';
+                    $arrayMap[]='AL';
+                    break;
+                case '[':
+                    $arrayMap[]='AM';
+                    break;
+                case ']':
+                    $arrayMap[]='AN';
                     break;
                 case '<':
-                    $arrayMap[]='m';
+                    $arrayMap[]='AO';
                     break;
                 case '>':
-                    $arrayMap[]='n';
-                    break;
-                
-                //region 4
-                case ',':
-                    $arrayMap[]='j';
+                    $arrayMap[]='AP';
                     break;
                 case '=':
-                    $arrayMap[]='o';
+                    $arrayMap[]='AQ';
                     break;
                 case '.':
-                    $arrayMap[]='p';
+                    $arrayMap[]='AR';
                     break;
                 case '!':
-                    $arrayMap[]='q';
+                    $arrayMap[]='BA';
                     break;
                 case ':':
-                    $arrayMap[]='r';
+                    $arrayMap[]='BB';
                     break;
-                
-                //region 5
-                case 'int':
-                    $arrayMap[]='A';
+                case '^':
+                    $arrayMap[]='BC';
                     break;
-                case 'float':
-                    $arrayMap[]='B';
+                case '~':
+                    $arrayMap[]='BD';
                     break;
-                case 'char':
-                    $arrayMap[]='C';
+                case 'in':
+                    $arrayMap[]='BE';
                     break;
-                case 'double':
-                    $arrayMap[]='D';
+                case 'is':
+                    $arrayMap[]='BF';
                     break;
-                case 'short':
-                    $arrayMap[]='E';
+                case 'not':
+                    $arrayMap[]='BG';
                     break;
-                case 'long':
-                    $arrayMap[]='F';
+                case 'or':
+                    $arrayMap[]='BH';
                     break;
-                case 'signed':
-                    $arrayMap[]='G';
+                case 'and':
+                    $arrayMap[]='BI';
                     break;
-                case 'unsigned':
-                    $arrayMap[]='H';
+                case 'while':
+                    $arrayMap[]='BJ';
                     break;
-                case 'const':
-                    $arrayMap[]='T';
-                    break;
-                case 'sizeof':
-                    $arrayMap[]='W';
-                    break;
-                case 'struct':
-                    $arrayMap[]='X';
-                    break;
-                case 'enum':
-                    $arrayMap[]='Y';
-                    break;
-                case 'typedef':
-                    $arrayMap[]='Z';
-                    break;
-                case '@': //string
-                    $arrayMap[]='5';
-                    break;
-                
-                //region 6
                 case 'if':
-                    $arrayMap[]='I';
+                    $arrayMap[]='BK';
                     break;
                 case 'else':
-                    $arrayMap[]='J';
-                    break;
-                
-                //region 7
-                case 'while':
-                    $arrayMap[]='K';
-                    break;
-                case 'do':
-                    $arrayMap[]='L';
+                    $arrayMap[]='BL';
                     break;
                 case 'for':
-                    $arrayMap[]='M';
-                    break;
-                
-                //region 8
-                case 'goto':
-                    $arrayMap[]='O';
-                    break;
-                case 'continue':
-                    $arrayMap[]='U';
-                    break;
-                
-                //region 9
-                case 'case':
-                    $arrayMap[]='P';
+                    $arrayMap[]='BM';
                     break;
                 case 'break':
-                    $arrayMap[]='Q';
+                    $arrayMap[]='BN';
                     break;
-                case 'switch':
-                    $arrayMap[]='S';
+                case 'continue':
+                    $arrayMap[]='BO';
                     break;
+                case 'pass':
+                    $arrayMap[]='BP';
+                    break;
+
                 
-                //region 10
-                case 'return':
-                    $arrayMap[]='R';
+                case 'int':
+                    $arrayMap[]='aa';
                     break;
+                case 'long':
+                    $arrayMap[]='ab';
+                    break;
+                case 'float':
+                    $arrayMap[]='ac';
+                    break;
+                case 'complex':
+                    $arrayMap[]='ad';
+                    break;
+                case 'str':
+                    $arrayMap[]='ae';
+                    break;
+                case 'repr':
+                    $arrayMap[]='af';
+                    break;
+                case 'eval':
+                    $arrayMap[]='ag';
+                    break;
+                case 'tuple':
+                    $arrayMap[]='ah';
+                    break;
+                case 'list':
+                    $arrayMap[]='ai';
+                    break;
+                case 'set':
+                    $arrayMap[]='aj';
+                    break;
+                case 'dict':
+                    $arrayMap[]='ak';
+                    break;
+                case 'frozenset':
+                    $arrayMap[]='al';
+                    break;
+                case 'chr':
+                    $arrayMap[]='am';
+                    break;
+                case 'unichr':
+                    $arrayMap[]='an';
+                    break;
+                case 'ord':
+                    $arrayMap[]='ao';
+                    break;
+                case 'hex':
+                    $arrayMap[]='ap';
+                    break;
+                case 'oct':
+                    $arrayMap[]='aq';
+                    break;
+                case 'abs':
+                    $arrayMap[]='ar';
+                    break;
+                case 'ceil':
+                    $arrayMap[]='as';
+                    break;
+                case 'cmp':
+                    $arrayMap[]='at';
+                    break;
+                case 'exp':
+                    $arrayMap[]='au';
+                    break;
+                case 'fabs':
+                    $arrayMap[]='av';
+                    break;
+                case 'floor':
+                    $arrayMap[]='aw';
+                    break;
+                case 'log':
+                    $arrayMap[]='ax';
+                    break;
+                case 'log10':
+                    $arrayMap[]='ay';
+                    break;
+                case 'max':
+                    $arrayMap[]='az';
+                    break;
+
+                case 'min':
+                    $arrayMap[]='ba';
+                    break;
+                case 'modf':
+                    $arrayMap[]='bb';
+                    break;
+                case 'pow':
+                    $arrayMap[]='bc';
+                    break;
+                case 'round':
+                    $arrayMap[]='bd';
+                    break;
+                case 'sqrt':
+                    $arrayMap[]='be';
+                    break;
+                case 'choice':
+                    $arrayMap[]='bf';
+                    break;
+                case 'randrange':
+                    $arrayMap[]='bg';
+                    break;
+                case 'random':
+                    $arrayMap[]='bh';
+                    break;
+                case 'seed':
+                    $arrayMap[]='bi';
+                    break;
+                case 'shuffle':
+                    $arrayMap[]='bj';
+                    break;
+                case 'uniform':
+                    $arrayMap[]='bk';
+                    break;
+                case 'acos':
+                    $arrayMap[]='bl';
+                    break;
+                case 'asin':
+                    $arrayMap[]='bm';
+                    break;
+                case 'atan':
+                    $arrayMap[]='bn';
+                    break;
+                case 'atan2':
+                    $arrayMap[]='bo';
+                    break;
+                case 'cos':
+                    $arrayMap[]='bp';
+                    break;
+                case 'hypot':
+                    $arrayMap[]='bq';
+                    break;
+                case 'sin':
+                    $arrayMap[]='br';
+                    break;
+                case 'tan':
+                    $arrayMap[]='bs';
+                    break;
+                case 'degrees':
+                    $arrayMap[]='bt';
+                    break;
+                case 'radians':
+                    $arrayMap[]='bu';
+                    break;
+                case 'pi':
+                    $arrayMap[]='bv';
+                    break;
+                case 'e':
+                    $arrayMap[]='bw';
+                    break;
+                case 'capitalize':
+                    $arrayMap[]='bx';
+                    break;
+                case 'center':
+                    $arrayMap[]='by';
+                    break;
+                case 'count':
+                    $arrayMap[]='bz';
+                    break;
+
+                
+                case 'decode':
+                    $arrayMap[]='ca';
+                    break;
+                case 'encode':
+                    $arrayMap[]='cb';
+                    break;
+                case 'endswith':
+                    $arrayMap[]='cc';
+                    break;
+                case 'expandtabs':
+                    $arrayMap[]='cd';
+                    break;
+                case 'find':
+                    $arrayMap[]='ce';
+                    break;
+                case 'index':
+                    $arrayMap[]='cf';
+                    break;
+                case 'isalnum':
+                    $arrayMap[]='cg';
+                    break;
+                case 'isalpha':
+                    $arrayMap[]='ch';
+                    break;
+                case 'isdigit':
+                    $arrayMap[]='ci';
+                    break;
+                case 'islower':
+                    $arrayMap[]='cj';
+                    break;
+                case 'isnumeric':
+                    $arrayMap[]='ck';
+                    break;
+                case 'isspace':
+                    $arrayMap[]='cl';
+                    break;
+                case 'istitle':
+                    $arrayMap[]='cm';
+                    break;
+                case 'isupper':
+                    $arrayMap[]='cn';
+                    break;
+                case 'join':
+                    $arrayMap[]='co';
+                    break;
+                case 'len':
+                    $arrayMap[]='cp';
+                    break;
+                case 'ljust':
+                    $arrayMap[]='cq';
+                    break;
+                case 'lower':
+                    $arrayMap[]='cr';
+                    break;
+                case 'lstrip':
+                    $arrayMap[]='cs';
+                    break;
+                case 'maketrans':
+                    $arrayMap[]='ct';
+                    break;
+                case 'max':
+                    $arrayMap[]='cu';
+                    break;
+                case 'min':
+                    $arrayMap[]='cv';
+                    break;
+                case 'replace':
+                    $arrayMap[]='cw';
+                    break;
+                case 'rfind':
+                    $arrayMap[]='cx';
+                    break;
+                case 'rindex':
+                    $arrayMap[]='cy';
+                    break;
+                case 'rjust':
+                    $arrayMap[]='cz';
+                    break;
+
+
+                case 'rstrip':
+                    $arrayMap[]='da';
+                    break;
+                case 'split':
+                    $arrayMap[]='db';
+                    break;
+                case 'splitlines':
+                    $arrayMap[]='dc';
+                    break;
+                case 'startswith':
+                    $arrayMap[]='dd';
+                    break;
+                case 'strip':
+                    $arrayMap[]='de';
+                    break;
+                case 'swapcase':
+                    $arrayMap[]='df';
+                    break;
+                case 'title':
+                    $arrayMap[]='dg';
+                    break;
+                case 'translate':
+                    $arrayMap[]='dh';
+                    break;
+                case 'upper':
+                    $arrayMap[]='di';
+                    break;
+                case 'zfill':
+                    $arrayMap[]='dj';
+                    break;
+                case 'isdecimal':
+                    $arrayMap[]='dk';
+                    break;
+                case 'type':
+                    $arrayMap[]='dl';
+                    break;
+                // case 'count':
+                //     $arrayMap[]='dm';
+                //     break;
+                // case 'count':
+                //     $arrayMap[]='dn';
+                //     break;
+                // case 'count':
+                //     $arrayMap[]='do';
+                //     break;
+                // case 'count':
+                //     $arrayMap[]='dp';
+                //     break;
+                // case 'count':
+                //     $arrayMap[]='dq';
+                //     break;
+                // case 'count':
+                //     $arrayMap[]='dr';
+                //     break;
+                // case 'count':
+                //     $arrayMap[]='ds';
+                //     break;
+                // case 'count':
+                //     $arrayMap[]='dt';
+                //     break;
+                // case 'count':
+                //     $arrayMap[]='du';
+                //     break;
+                // case 'count':
+                //     $arrayMap[]='dv';
+                //     break;
+                // case 'count':
+                //     $arrayMap[]='dw';
+                //     break;
+                // case 'count':
+                //     $arrayMap[]='dx';
+                //     break;
+                // case 'count':
+                //     $arrayMap[]='dy';
+                //     break;
+                // case 'count':
+                //     $arrayMap[]='dz';
+                //     break;
+                    
+                // case 'count':
+                //     $arrayMap[]='ea';
+                //     break;
+                // case 'count':
+                //     $arrayMap[]='eb';
+                //     break;
+                // case 'count':
+                //     $arrayMap[]='ec';
+                //     break;
+                // case 'count':
+                //     $arrayMap[]='ed';
+                //     break;
+                // case 'count':
+                //     $arrayMap[]='ee';
+                //     break;
                 
                 //region 11
                 default: //angka, nama variabel, nama fungsi
                     if(preg_match('/[^0-9]+|[^a-z]+/i', $term)) {
-                        $arrayMap[]='N';
+                        $arrayMap[]='NN';
                     }
             }
         }

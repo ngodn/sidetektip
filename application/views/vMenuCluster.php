@@ -16,51 +16,46 @@
 		'single_linkage' => 'Single Linkage',
 	);
 ?>
-<div style="min-width:150px; position:relative; margin-right:10px; float:left">
-<?php
-$data = array(
-		'style'		=>	'max-height:59px; min-height:59px'
-	);
-echo form_fieldset('',$data);
-?> 
-<table>
-    <tr>
- 	    <th>
-        <td style="text-align: left; font-family:sans-serif; font-size:14px; padding-bottom:5px">Kontes</td>
-        <td style="text-align: left; font-family:sans-serif; font-size:14px; padding-bottom:5px">
-        <?php $kontes = 'id="kontes" name="kontes"'; ?>
-        <?php echo form_dropdown('kontes', $options_contest, $contest,$kontes)?>
-        </td>
-        </th>
-	</tr>
-	<tr>
-       <th>
-      <td style="text-align: left; font-family:sans-serif; font-size:14px">Soal</td>     
-        <td>
-        <?php $tugas = 'id="tugas" name="tugas"'; ?>
-        <?php echo form_dropdown('tugas', $options_problem, $problem, $tugas)?>
-        </td>
-        </th>
-    </tr>    
-</table>
-<?php
+    <div style="min-width:150px; position:relative; margin-right:10px; float:left">
+        <?php $data = array( 'style' =>	'max-height:59px; min-height:59px' ); echo form_fieldset('',$data); ?>
+            <table>
+                <tr>
+                    <th>
+                        <td style="text-align: left; font-family:sans-serif; font-size:14px; padding-bottom:5px">Kontes</td>
+                        <td style="text-align: left; font-family:sans-serif; font-size:14px; padding-bottom:5px">
+                            <?php $kontes = 'id="kontes" name="kontes"'; ?>
+                            <?php echo form_dropdown('kontes', $options_contest, $contest,$kontes)?>
+                        </td>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <td style="text-align: left; font-family:sans-serif; font-size:14px">Soal</td>
+                        <td>
+                            <?php $tugas = 'id="tugas" name="tugas"'; ?>
+                            <?php echo form_dropdown('tugas', $options_problem, $problem, $tugas)?>
+                        </td>
+                    </th>
+                </tr>
+            </table>
+            <?php
 echo form_fieldset_close();
 ?>
-</div>
+    </div>
 
-<div style="margin-right:-5px; position:relative; margin-top:-6px; float:left">
-<?php
+    <div style="margin-right:-5px; position:relative; margin-top:-6px; float:left">
+        <?php
 $data = array(
 		'style'		=>	'max-height:65px; min-height:65px'
 	);
 echo form_fieldset('Proses Clustering',$data);
 ?>
-<table>
-     <tr>
-        <td>
-            <tr>
-                <td style="text-align: left; font-family:sans-serif; font-size:14px;">
-                <?php
+            <table>
+                <tr>
+                    <td>
+                        <tr>
+                            <td style="text-align: left; font-family:sans-serif; font-size:14px;">
+                                <?php
                 $data = array(
         			'name'      => 'metode_clustering',
                     'id'        => 'metode_clustering',
@@ -72,9 +67,9 @@ echo form_fieldset('Proses Clustering',$data);
                 echo form_checkbox($data);
         		echo ' metode clustering';
                 ?>
-                </td>
-                <td style="text-align: left; font-family:sans-serif; font-size:14px; ">
-                    <?php
+                            </td>
+                            <td style="text-align: left; font-family:sans-serif; font-size:14px; ">
+                                <?php
                     $data = array(
                         'name'      => 'hapus_include',
                         'id'        => 'hapus_include',
@@ -86,13 +81,13 @@ echo form_fieldset('Proses Clustering',$data);
                     echo form_checkbox($data);
                     echo 'Hilangkan Include (C/C++)';
                     ?>
-                </td> 
-            </tr>            
-        </td>
-        <td>
-            <tr>
-                <td style="text-align: left; font-family:sans-serif; font-size:14px">
-                    <?php
+                            </td>
+                        </tr>
+                    </td>
+                    <td>
+                        <tr>
+                            <td style="text-align: left; font-family:sans-serif; font-size:14px">
+                                <?php
                     if($select[$method] == 'k'){
                         $h='hidden';
                     }
@@ -109,41 +104,42 @@ echo form_fieldset('Proses Clustering',$data);
                         );
                     echo form_checkbox($data);
                     ?>
-                    <font id='tc' style="visibility:<?php echo $h ?>"> <?php echo 'kesamaan test case'; ?> </font>
-                    <?php
+                                    <font id='tc' style="visibility:<?php echo $h ?>">
+                                        <?php echo 'kesamaan test case'; ?> </font>
+                                    <?php
                     ?>
-                </td>
-            </tr>
-        </td>
-    </tr>
+                            </td>
+                        </tr>
+                    </td>
+                </tr>
 
-           
-</table>
-<?php
+
+            </table>
+            <?php
 echo form_fieldset_close();
 ?>
 
-</div>
+    </div>
 
-<div  style="margin-right:5px; position:relative; margin-top:-8px; float:left; padding-top:3px; margin-left:10px; max-width:350px; min-height:25px; max-height:25px">
-<?php
+    <div style="margin-right:5px; position:relative; margin-top:-8px; float:left; padding-top:3px; margin-left:10px; max-width:350px; min-height:25px; max-height:25px">
+        <?php
 $data = array(
 		'style'		=>	'max-height:40px; min-height:40px; margin-bottom:5px'
 	);
 echo form_fieldset('Metode', $data);
-?> 
-<table>
-    <tr>
-    	<th>
-       	<?php if (empty($metode_clustering)){ ?>
-    		<td id='mclustering' style="font-family:sans-serif; font-size:14px; visibility:hidden;padding-bottom:5px">
-  		<?php
+?>
+            <table>
+                <tr>
+                    <th>
+                        <?php if (empty($metode_clustering)){ ?>
+                        <td id='mclustering' style="font-family:sans-serif; font-size:14px; visibility:hidden;padding-bottom:5px">
+                            <?php
 		$v = 'hidden';
 		}
 		else {
 		?>
-        <td id='mclustering' style="font-family:sans-serif; font-size:14px; visibility:visible;padding-bottom:5px">
-        <?php
+                                <td id='mclustering' style="font-family:sans-serif; font-size:14px; visibility:visible;padding-bottom:5px">
+                                    <?php
 		$v = 'visible';
 		}
 		$methodjs = 'id="method" name="method"';
@@ -171,10 +167,10 @@ echo form_fieldset('Metode', $data);
 			$databk = 'id="i" style="visibility:hidden"';
 		}
 		?>
-       	</td>
-        <td>
-        <font id="font_i" style="visibility:<?php echo $bk ?>">&nbsp;&nbsp; i </font>
-        <?php
+                                </td>
+                                <td>
+                                    <font id="font_i" style="visibility:<?php echo $bk ?>">&nbsp;&nbsp; i </font>
+                                    <?php
         $options=array(
             '1.00' => '1.00',
             '0.99' => '0.99',
@@ -199,8 +195,8 @@ echo form_fieldset('Metode', $data);
         );    
 		echo form_dropdown('i', $options, $i, $databk);
 		?>
-        <font id="font_k" style="margin-left:-70px; padding-top:2px; position:absolute; visibility:<?php echo $k?>">k</font>
-        <?php 
+                                        <font id="font_k" style="margin-left:-70px; padding-top:2px; position:absolute; visibility:<?php echo $k?>">k</font>
+                                        <?php 
 		if($k == 'visible' && !empty($metode_clustering)){
 			$data = array(
 			  'name'        => 'k',
@@ -218,16 +214,16 @@ echo form_fieldset('Metode', $data);
 		}
         echo form_input($data);
    		?>
-    
-        </td>
-        </th>
-    </tr>
-</table>
-<?php
+
+                                </td>
+                    </th>
+                </tr>
+            </table>
+            <?php
 echo form_fieldset_close();
 ?>
 
-<?php
+                <?php
 $data = array(
 	'name'      => 'proses',
 	'id'        => 'proses',
@@ -238,30 +234,34 @@ $data = array(
 echo form_checkbox($data);
 echo ' modus penelitian';
 ?>
-</div>
-<div  style="float:left; margin-left:-15px; min-height:35px; max-height:35px; padding-right:30px; padding-top:21px; padding-bottom:16px">
-<table>
-	<tr>
-		<th>
-        <td id="submit" onclick="fbk()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <?php echo form_submit('run', 'Proses')?></td>
-    	</th>
-	</tr>
-</table>
-</div>
-<?php echo form_close()?>
+    </div>
+    <div style="float:left; margin-left:-15px; min-height:35px; max-height:35px; padding-right:30px; padding-top:21px; padding-bottom:16px">
+        <table>
+            <tr>
+                <th>
+                    <td id="submit" onclick="fbk()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <?php echo form_submit('run', 'Proses')?>
+                    </td>
+                </th>
+            </tr>
+        </table>
+    </div>
+    <?php echo form_close()?>
 
-<script>  
-    $(document).ready(function(){
-        $("#kontes").change(function(){
-            var kontes = $("#kontes").val();
-            $.ajax({
-               type : "POST",
-               url  : "<?php echo base_url(); ?>index.php/cmain/get_problem",
-               data : {kontes: kontes},
-               success: function(data){
-                   $("#tugas").html(data);
-               }
+    <script>
+        $(document).ready(function () {
+            $("#kontes").change(function () {
+                var kontes = $("#kontes").val();
+                $.ajax({
+                    type: "POST",
+                    url: "<?php echo base_url(); ?>index.php/cmain/get_problem",
+                    data: {
+                        kontes: kontes
+                    },
+                    success: function (data) {
+                        $("#tugas").html(data);
+                    }
+                });
             });
-		});
-    });
-</script>
+        });
+    </script>
