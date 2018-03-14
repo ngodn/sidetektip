@@ -48,6 +48,9 @@ class Mparsing extends CI_Model {
     private function removeComment($line='') {
         //untuk comment tipe '//'
         $line=preg_replace('/\/\/.*/', '', $line);
+
+        //untuk comment tipe '#'
+        $line=preg_replace('/\#.*/', '', $line);
         
         //untuk comment tipe '/*...*/'
         $line=preg_replace('/(\/\*).*(\*\/)/', '', $line);

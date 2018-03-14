@@ -18,38 +18,33 @@
 ?>
     <div style="min-width:150px; position:relative; margin-right:10px; float:left">
         <?php $data = array( 'style' =>	'max-height:59px; min-height:59px' ); echo form_fieldset('',$data); ?>
-            <table>
-                <tr>
-                    <th>
-                        <td style="text-align: left; font-family:sans-serif; font-size:14px; padding-bottom:5px">Kontes</td>
-                        <td style="text-align: left; font-family:sans-serif; font-size:14px; padding-bottom:5px">
-                            <?php $kontes = 'id="kontes" name="kontes"'; ?>
-                            <?php echo form_dropdown('kontes', $options_contest, $contest,$kontes)?>
-                        </td>
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <td style="text-align: left; font-family:sans-serif; font-size:14px">Soal</td>
-                        <td>
-                            <?php $tugas = 'id="tugas" name="tugas"'; ?>
-                            <?php echo form_dropdown('tugas', $options_problem, $problem, $tugas)?>
-                        </td>
-                    </th>
-                </tr>
-            </table>
-            <?php
-echo form_fieldset_close();
-?>
+        <table>
+            <tr>
+                <th>
+                    <td style="text-align: left; font-family:sans-serif; font-size:14px; padding-bottom:5px">Kontes</td>
+                    <td style="text-align: left; font-family:sans-serif; font-size:14px; padding-bottom:5px">
+                        <?php $kontes = 'id="kontes" name="kontes"'; ?>
+                        <?php echo form_dropdown('kontes', $options_contest, $contest,$kontes)?>
+                    </td>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <td style="text-align: left; font-family:sans-serif; font-size:14px">Soal</td>
+                    <td>
+                        <?php $tugas = 'id="tugas" name="tugas"'; ?>
+                        <?php echo form_dropdown('tugas', $options_problem, $problem, $tugas)?>
+                    </td>
+                </th>
+            </tr>
+        </table>
+        <?php echo form_fieldset_close();?>
     </div>
 
     <div style="margin-right:-5px; position:relative; margin-top:-6px; float:left">
-        <?php
-$data = array(
-		'style'		=>	'max-height:65px; min-height:65px'
-	);
-echo form_fieldset('Proses Clustering',$data);
-?>
+        <?php $data = array('style'	=>	'max-height:65px; min-height:65px');
+        echo form_fieldset('Proses Clustering',$data);
+        ?>
             <table>
                 <tr>
                     <td>

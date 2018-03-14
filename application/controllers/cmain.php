@@ -31,7 +31,8 @@ class cmain extends CI_Controller {
 	 	$data=array(
 			'contest' => '',
 			'problem' => '',
-			'method' => 'average_linkage', //metode default
+			// 'method' => 'average_linkage', // metode default
+			'method' => 'bisecting_kmeans',
 			'i' => '0.95',
 			'k' => '',
 			'process' => FALSE,

@@ -18,6 +18,8 @@ class Mmapping extends CI_Model {
                     break;
                 case 'void':
                     break;
+                case '\n';
+                    break;
                 
 
                 case '+':
@@ -178,25 +180,25 @@ class Mmapping extends CI_Model {
                 case 'abs':
                     $arrayMap[]='ar';
                     break;
-                case 'ceil':
+                case '.ceil':
                     $arrayMap[]='as';
                     break;
                 case 'cmp':
                     $arrayMap[]='at';
                     break;
-                case 'exp':
+                case '.exp':
                     $arrayMap[]='au';
                     break;
-                case 'fabs':
+                case '.fabs':
                     $arrayMap[]='av';
                     break;
-                case 'floor':
+                case '.floor':
                     $arrayMap[]='aw';
                     break;
-                case 'log':
+                case '.log':
                     $arrayMap[]='ax';
                     break;
-                case 'log10':
+                case '.log10':
                     $arrayMap[]='ay';
                     break;
                 case 'max':
@@ -206,7 +208,7 @@ class Mmapping extends CI_Model {
                 case 'min':
                     $arrayMap[]='ba';
                     break;
-                case 'modf':
+                case '.modf':
                     $arrayMap[]='bb';
                     break;
                 case 'pow':
@@ -215,7 +217,7 @@ class Mmapping extends CI_Model {
                 case 'round':
                     $arrayMap[]='bd';
                     break;
-                case 'sqrt':
+                case '.sqrt':
                     $arrayMap[]='be';
                     break;
                 case 'choice':
@@ -230,40 +232,40 @@ class Mmapping extends CI_Model {
                 case 'seed':
                     $arrayMap[]='bi';
                     break;
-                case 'shuffle':
+                case '.shuffle':
                     $arrayMap[]='bj';
                     break;
                 case 'uniform':
                     $arrayMap[]='bk';
                     break;
-                case 'acos':
+                case '.acos':
                     $arrayMap[]='bl';
                     break;
-                case 'asin':
+                case '.asin':
                     $arrayMap[]='bm';
                     break;
-                case 'atan':
+                case '.atan':
                     $arrayMap[]='bn';
                     break;
-                case 'atan2':
+                case '.atan2':
                     $arrayMap[]='bo';
                     break;
-                case 'cos':
+                case '.cos':
                     $arrayMap[]='bp';
                     break;
-                case 'hypot':
+                case '.hypot':
                     $arrayMap[]='bq';
                     break;
-                case 'sin':
+                case '.sin':
                     $arrayMap[]='br';
                     break;
-                case 'tan':
+                case '.tan':
                     $arrayMap[]='bs';
                     break;
-                case 'degrees':
+                case '.degrees':
                     $arrayMap[]='bt';
                     break;
-                case 'radians':
+                case '.radians':
                     $arrayMap[]='bu';
                     break;
                 case 'pi':
@@ -272,191 +274,194 @@ class Mmapping extends CI_Model {
                 case 'e':
                     $arrayMap[]='bw';
                     break;
-                case 'capitalize':
+                case '.capitalize':
                     $arrayMap[]='bx';
                     break;
-                case 'center':
+                case '.center':
                     $arrayMap[]='by';
                     break;
-                case 'count':
+                case '.count':
                     $arrayMap[]='bz';
                     break;
 
                 
-                case 'decode':
+                case '.decode':
                     $arrayMap[]='ca';
                     break;
-                case 'encode':
+                case '.encode':
                     $arrayMap[]='cb';
                     break;
-                case 'endswith':
+                case '.endswith':
                     $arrayMap[]='cc';
                     break;
-                case 'expandtabs':
+                case '.expandtabs':
                     $arrayMap[]='cd';
                     break;
-                case 'find':
+                case '.find':
                     $arrayMap[]='ce';
                     break;
-                case 'index':
+                case '.index':
                     $arrayMap[]='cf';
                     break;
-                case 'isalnum':
+                case '.isalnum':
                     $arrayMap[]='cg';
                     break;
-                case 'isalpha':
+                case '.isalpha':
                     $arrayMap[]='ch';
                     break;
-                case 'isdigit':
+                case '.isdigit':
                     $arrayMap[]='ci';
                     break;
-                case 'islower':
+                case '.islower':
                     $arrayMap[]='cj';
                     break;
-                case 'isnumeric':
+                case '.isnumeric':
                     $arrayMap[]='ck';
                     break;
-                case 'isspace':
+                case '.isspace':
                     $arrayMap[]='cl';
                     break;
-                case 'istitle':
+                case '.istitle':
                     $arrayMap[]='cm';
                     break;
-                case 'isupper':
+                case '.isupper':
                     $arrayMap[]='cn';
                     break;
-                case 'join':
+                case '.join':
                     $arrayMap[]='co';
                     break;
-                case 'len':
+                case '.len':
                     $arrayMap[]='cp';
                     break;
-                case 'ljust':
+                case '.ljust':
                     $arrayMap[]='cq';
                     break;
-                case 'lower':
+                case '.lower':
                     $arrayMap[]='cr';
                     break;
-                case 'lstrip':
+                case '.lstrip':
                     $arrayMap[]='cs';
                     break;
-                case 'maketrans':
+                case '.maketrans':
                     $arrayMap[]='ct';
                     break;
-                case 'max':
+                case '.max':
                     $arrayMap[]='cu';
                     break;
-                case 'min':
+                case '.min':
                     $arrayMap[]='cv';
                     break;
-                case 'replace':
+                case '.replace':
                     $arrayMap[]='cw';
                     break;
-                case 'rfind':
+                case '.rfind':
                     $arrayMap[]='cx';
                     break;
-                case 'rindex':
+                case '.rindex':
                     $arrayMap[]='cy';
                     break;
-                case 'rjust':
+                case '.rjust':
                     $arrayMap[]='cz';
                     break;
 
 
-                case 'rstrip':
+                case '.rstrip':
                     $arrayMap[]='da';
                     break;
-                case 'split':
+                case '.split':
                     $arrayMap[]='db';
                     break;
-                case 'splitlines':
+                case '.splitlines':
                     $arrayMap[]='dc';
                     break;
-                case 'startswith':
+                case '.startswith':
                     $arrayMap[]='dd';
                     break;
-                case 'strip':
+                case '.strip':
                     $arrayMap[]='de';
                     break;
-                case 'swapcase':
+                case '.swapcase':
                     $arrayMap[]='df';
                     break;
-                case 'title':
+                case '.title':
                     $arrayMap[]='dg';
                     break;
-                case 'translate':
+                case '.translate':
                     $arrayMap[]='dh';
                     break;
-                case 'upper':
+                case '.upper':
                     $arrayMap[]='di';
                     break;
-                case 'zfill':
+                case '.zfill':
                     $arrayMap[]='dj';
                     break;
-                case 'isdecimal':
+                case '.isdecimal':
                     $arrayMap[]='dk';
                     break;
                 case 'type':
                     $arrayMap[]='dl';
                     break;
-                // case 'count':
-                //     $arrayMap[]='dm';
-                //     break;
-                // case 'count':
-                //     $arrayMap[]='dn';
-                //     break;
-                // case 'count':
-                //     $arrayMap[]='do';
-                //     break;
-                // case 'count':
-                //     $arrayMap[]='dp';
-                //     break;
-                // case 'count':
-                //     $arrayMap[]='dq';
-                //     break;
-                // case 'count':
-                //     $arrayMap[]='dr';
-                //     break;
-                // case 'count':
-                //     $arrayMap[]='ds';
-                //     break;
-                // case 'count':
-                //     $arrayMap[]='dt';
-                //     break;
-                // case 'count':
-                //     $arrayMap[]='du';
-                //     break;
-                // case 'count':
-                //     $arrayMap[]='dv';
-                //     break;
-                // case 'count':
-                //     $arrayMap[]='dw';
-                //     break;
-                // case 'count':
-                //     $arrayMap[]='dx';
-                //     break;
-                // case 'count':
-                //     $arrayMap[]='dy';
-                //     break;
-                // case 'count':
-                //     $arrayMap[]='dz';
-                //     break;
-                    
-                // case 'count':
-                //     $arrayMap[]='ea';
-                //     break;
-                // case 'count':
-                //     $arrayMap[]='eb';
-                //     break;
-                // case 'count':
-                //     $arrayMap[]='ec';
-                //     break;
-                // case 'count':
-                //     $arrayMap[]='ed';
-                //     break;
-                // case 'count':
-                //     $arrayMap[]='ee';
-                //     break;
+                case '.append':
+                    $arrayMap[]='dm';
+                    break;
+                case '.count':
+                    $arrayMap[]='dn';
+                    break;
+                case '.extend':
+                    $arrayMap[]='do';
+                    break;
+                case '.index':
+                    $arrayMap[]='dp';
+                    break;
+                case '.insert':
+                    $arrayMap[]='dq';
+                    break;
+                case '.pop':
+                    $arrayMap[]='dr';
+                    break;
+                case '.remove':
+                    $arrayMap[]='ds';
+                    break;
+                case '.reverse':
+                    $arrayMap[]='dt';
+                    break;
+                case '.sort':
+                    $arrayMap[]='du';
+                    break;
+                case '.clear':
+                    $arrayMap[]='dv';
+                    break;
+                case '.copy':
+                    $arrayMap[]='dw';
+                    break;
+                case '.fromkeys':
+                    $arrayMap[]='dx';
+                    break;
+                case '.get':
+                    $arrayMap[]='dy';
+                    break;
+                case '.has_key':
+                    $arrayMap[]='dz';
+                    break;
+
+                case '.items':
+                    $arrayMap[]='ea';
+                    break;
+                case '.keys':
+                    $arrayMap[]='eb';
+                    break;
+                case '.setdefault':
+                    $arrayMap[]='ec';
+                    break;
+                case '.update':
+                    $arrayMap[]='ed';
+                    break;
+                case '.values':
+                    $arrayMap[]='ee';
+                    break;
+                case '@': //string
+                    $arrayMap[]='SS';
+                    break;
                 
                 //region 11
                 default: //angka, nama variabel, nama fungsi
